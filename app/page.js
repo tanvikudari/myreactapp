@@ -1,19 +1,22 @@
-'use client';
-import { useState } from 'react';
-
-export default function Home() {
-  const [count, setCount] = useState(0);
-
+export default function HomePage() {
   return (
-    <div className="p-8">
-      <h1 className="text-2xl font-bold">Home Page</h1>
-      <p>You clicked {count} times</p>
-      <button
-        onClick={() => setCount(count + 1)}
-        className="mt-4 px-4 py-2 bg-blue-500 text-white rounded"
-      >
-        Click me
-      </button>
-    </div>
+    <main className="main-container">
+      <div className="content">
+        <h1 className="yellow-text">Welcome to My Portfolio</h1>
+        <p className="white-text">Explore my projects and get to know me.</p>
+
+        {/* Embedded YouTube video */}
+        <iframe 
+  width="560" 
+  height="315" 
+  src="https://www.youtube.com/embed/HGqVSTZTzws" 
+  title="YouTube video player" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen
+></iframe>
+
+      </div>
+    </main>
   );
 }
